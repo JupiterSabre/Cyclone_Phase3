@@ -1,6 +1,9 @@
-<!-- 
-LEFT OFF AT 2:16:39
-    THIS PROJECT IS USING BOOTSTRAP
+TO DO:
+-configure bike registry so that it has a relationship to bike owners
+-configure the bike session table to register bike borrows, borrow session will be time stamped, and deduct fees at x rate if not returned, or for regular tune up if bike is not in proper condition.
+-set up a window in home page to show registered bikes and borrowed bikes
+
+    THIS PROJECT IS USING BOOTSTRAP, SQLALCHEMY, AND FLASK
     TEMPLATES - HOLD HTML FILES
 
     STATIC - TAKES JS, OR IMAGES, OR CSS, ONCE THEY ARE SAVED IN THE DIRECTORY, YOU CAN LOAD THEM IN THE HTML WITH THE FOLLOWING PROTOTYPE: 
@@ -58,7 +61,7 @@ LEFT OFF AT 2:16:39
     
     
     
-    -->
+    
 
 
 

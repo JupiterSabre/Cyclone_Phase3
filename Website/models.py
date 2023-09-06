@@ -17,15 +17,17 @@ class Member(db.Model, UserMixin):
 
 class Bike(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    owner_id = db.Column(db.Integer, db.ForeignKey("member.id"))
     # current_borrower: db.Column(db.Integer, db.ForeignKey("member.id"))
     # bike_shop = db.Column(db.String, db.ForeignKey("member.bike_shop"))
     manufacture = db.Column(db.String(45))
-    lock_combo = db.Column(db.String(100))
     type = db.Column(db.String(45))
-    date_registered = db.Column(db.DateTime(timezone=True), default=func.now)
-    current_borrow_status = db.Column(db.DateTime(timezone=True), default=func.now)
+    frame_height = db.Column(db.String(15))
+    lock_combo = db.Column(db.String(100))
+    date_registered = db.Column(db.String(15))
+    owner_id = db.Column(db.Integer, db.ForeignKey("member.id"))
+    current_borrow_status = db.Column(db.String(15))
     
+
     
 class Borrow_Session (db.Model):
     id = db.Column(db.Integer, primary_key=True)

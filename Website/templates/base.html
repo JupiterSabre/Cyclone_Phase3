@@ -35,6 +35,8 @@
         </div>
     </nav>
 
+    <!-- this jinja block is contingent code for flashing messages, in jinja as opposed to python you use lowercase booleans -->
+
     {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}
     {% for category, message in messages %}

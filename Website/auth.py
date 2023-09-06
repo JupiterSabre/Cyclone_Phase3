@@ -1,9 +1,16 @@
-from flask import Blueprint, render_template, request, flash
+from flask import Blueprint, render_template, request, flash, redirect, url_for
+from .models import Member
+from . import db
+# hashing functions are functions that have no inverse, use for beefing up password security. sha256 is a hasing algorithm. There are others if you have another preference.
+from werkzeug.security import generate_password_hash, check_password_hash
 
 auth = Blueprint("auth", __name__)
 
-@auth.route("/login", methods=['GET', 'POST'])
+
+@auth.route("/login", methods=["GET", "POST"])
 def login():
+    data = request.form 
+    print(data)
     return render_template("login.html", boolean=True)
 
 
@@ -15,29 +22,32 @@ def logout():
 
 
 
-@auth.route("/sign-up", methods=['GET', 'POST'])
+@auth.route("/sign-up", methods=["GET", "POST"])
 def sign_up():
     if request.method == "POST":
-        email = request.form.get('email')
-        first_name = request.form.get('firstName')
-        password1 = request.form.get('password1')
-        password2 = request.form.get('password2')
+        email = request.form.get("email")
+        first_name = request.form.get("first_name")
+        password1 = request.form.get("password1")
+        password2 = request.form.get("password2")
 
         if len(email) < 4 :
-            flash('Email must be greater than 3 characters', category='error')
+            flash("Email must be greater than 3 characters", category="error")
 
         elif len(first_name) < 2 :
-            flash('First name must be greater than 1 character', category='error')
+            flash("First name must be greater than 1 character", category="error")
 
         elif password1 != password2:
-            flash('Passwords don\'t match', category='error')
+            flash("Passwords don't match", category="error")
 
         elif len(password1) < 7:
-            flash('Password must be at least 8 characters', category='error')
+            flash("Password must be at least 8 characters", category="error")
 
         else:
-            flash('Account created!', category='success')
+            new_member = Member(email=email, first_name=first_name, password=generate_password_hash(password1, method="sha256"))
+            db.session.add(new_member)
+            db.session.commit()
+            flash("Account created!", category="success")
+            return redirect(url_for("views.home"))
 
-
-    return render_template('sign-up.html')
+    return render_template("sign-up.html")
 

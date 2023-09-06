@@ -23,7 +23,7 @@ def login():
                 flash("Incorrect password, try again", category="error")
         else:
             flash("Email not in registry", category="error")
-    return render_template("login.html", boolean=True)
+    return render_template("login.html", member=current_user)
 
 
 
@@ -69,5 +69,5 @@ def sign_up():
             flash("Account created!", category="success")
             return redirect(url_for("views.home"))
 
-    return render_template("sign-up.html")
+    return render_template("sign-up.html", member=current_user)
 

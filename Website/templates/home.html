@@ -1,6 +1,51 @@
 {% extends "base.html" %} {% block title %}homehomehome BIKE LIBRARY, USE IT OR LOSE IT homehomehome{% endblock %}
 
 {% block content %}
-<h1>GOT A BIKE? NEED A BIKE?</h1>
+
+<h1 align="center">GOT A BIKE? NEED A BIKE?</h1>
+
+
+
+<h3><em>locate a bike</em></h3>
+BUILD OUT FORM WITH GEOLOCATION
+<ul class="list-group list-group-flush" id = "bikes">
+    {% for bike in member.bikes %}
+    <li class="list-group-item">{{ bike.data }}</li>
+    {% endfor %}
+</ul>
+
+<br />
+<br />
+
+
+
+
+
+
+
+
+<h3><em>register a bike</em></h3>
+
+<form method="POST">
+    <label for="manufacture">Manufacture:</label>
+    <input type="text" name="manufacture" id="manufacture" class="form-control" placeholder="ie: Bianchi" required />
+
+    <label for="type">Type:</label>
+    <input type="text" name="type" id="type" class="form-control" placeholder="ie: Road Bike" required />
+
+    <label for="frame-height">Frame-Height:</label>
+    <input type="text" name="frame-height" id="frame-height" class="form-control" placeholder="ie: 58cm" required />
+
+    <label for="lock-combo">Lock-Combo:</label>
+    <input type="text" name="lock-combo" id="lock-combo" class="form-control" placeholder="ie:00-00-00" required/>
+
+    <label for="date-registered">Date Registered:</label>
+    <input type="datetime-local" name="date-registered" id="date-registered" class="form-control" required />
+    <br />
+
+    <button align="center" type="submit" id="register-bike" class="btn btn-primary">Register Bike</button>
+    
+
+</form>
 
 {% endblock %}

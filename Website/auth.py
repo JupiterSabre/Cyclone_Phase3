@@ -5,6 +5,7 @@ from . import db
 # hashing functions are functions that have no inverse, use for beefing up password security. sha256 is a hasing algorithm. There are others if you have another preference.
 from werkzeug.security import generate_password_hash, check_password_hash
 
+# __name__ is a parameter argument to the 
 auth = Blueprint("auth", __name__)
 
 

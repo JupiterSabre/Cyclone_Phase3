@@ -12,7 +12,9 @@ class Member(db.Model, UserMixin):
     password = db.Column(db.String(150))
     first_name = db.Column(db.String(150))
     bike_shop = db.Column(db.String(150))
-    bikes_shared = db.relationship("Bike")
+    bikes_shared = db.relationship("Bike", backref="member")
+
+
 
 
 class Bike(db.Model):
@@ -31,5 +33,6 @@ class Bike(db.Model):
     
 class Borrow_Session (db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    owner_email = db.Column(db.String, db.ForeignKey("member.email"))
+    bike_owner_name = db.Column(db.String, db.ForeignKey("member.first_name"))
+    bike_owner_email = db.Column(db.String, db.ForeignKey("member.email"))
     borrower_id = db.Column(db.Integer, db.ForeignKey("member.id"))

@@ -1,7 +1,9 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 from flask_login import login_user, login_required, logout_user, current_user
 from .models import Member
+from .queries import get_borrow_sessions
 from . import db
+
 # hashing functions are functions that have no inverse, use for beefing up password security. sha256 is a hasing algorithm. There are others if you have another preference.
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -25,6 +27,9 @@ def login():
         else:
             flash("Email not in registry", category="error")
     return render_template("login.html", member=current_user)
+
+
+# @auth
 
 
 

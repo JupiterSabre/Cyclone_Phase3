@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block title %} dashboard dashboarddashboard DASHBOARD dashboard dashboard dashboard {% endblock %} {% block content %}
+
+
+<h1 align="center">Dude, where's your bike(s)?</h1>
+<br />
+
+<h3><em> pick a query </em></h3>
+
+<form method="POST">
+    <select name="filter_option">
+        <option value="who-has-your-bikes">Dude, where are my bike(s)?</option>
+        <option value="enlisted-bikes">Enlisted Bikes</option>
+    </select>
+
+</form>
+
+<ul class="list-group list-group-flush" id="bikes">
+    {% if filtered_bikes %}
+    {% for bike in filtered_bikes %}
+    <li class="list-group-item"> {{ bike.data }} </li>
+    {% endfor %}
+    {% endif %}
+
+</ul>
+
+{% endblock %}

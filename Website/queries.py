@@ -5,7 +5,7 @@ from .models import Bike, Borrow_Session, Member
 
 queries = Blueprint("queries", __name__)
 
-@queries.route
+@queries.route("/get_borrow_sessions", methods=["GET"])
 def get_borrow_sessions():
     if not current_user.is_authenticated:
         return []
@@ -17,7 +17,7 @@ def get_borrow_sessions():
     borrow_sessions = (
         Borrow_Session.query
         .join(Member, Borrow_Session.borrower_id == Member.id)
-        .add_columns(Member.email, Member.first_name, Member.instagram_username)
+        .add_columns(Member.email, Member.first_name)
         .filter(Borrow_Session.bike_id.in_(bike_ids))
         .all()
     )

@@ -35,4 +35,8 @@ class Borrow_Session (db.Model):
     id = db.Column(db.Integer, primary_key=True)
     bike_owner_name = db.Column(db.String, db.ForeignKey("member.first_name"))
     bike_owner_email = db.Column(db.String, db.ForeignKey("member.email"))
+    bike_id = db.Column(db.String, db.ForeignKey("bike.id"))
     borrower_id = db.Column(db.Integer, db.ForeignKey("member.id"))
+
+
+

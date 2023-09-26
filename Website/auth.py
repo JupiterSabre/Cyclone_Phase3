@@ -1,7 +1,8 @@
+# auth.py routes use authentication
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 from flask_login import login_user, login_required, logout_user, current_user, UserMixin
 from .models import Member
-from .queries import get_borrow_sessions
+# from .queries import member_queries
 from . import db
 
 # hashing functions are functions that have no inverse, use for beefing up password security. sha256 is a hasing algorithm. There are others if you have another preference.

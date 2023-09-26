@@ -10,7 +10,7 @@ App for lending library of bikes.
 
 WHAT - This projct uses Python, Bootstrap, SQLAlchemy, Flask, (and Jinja???)
 
-HOW - One database, 3 Class Object Oriented Program
+HOW - One database, 3 Class Object Oriented Program (Many to many relationship)
 
     THIS PROJECT IS USING BOOTSTRAP, SQLALCHEMY, AND FLASK
     TEMPLATES - HOLD HTML FILES

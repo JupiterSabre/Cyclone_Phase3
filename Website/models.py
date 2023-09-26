@@ -3,20 +3,11 @@
 from . import db 
 from flask_login import UserMixin
 from sqlalchemy.sql import func
-from sqlalchemy import MetaData
-from flask_sqlalchemy import SQLAlchemy
 
-
-metadata = MetaData(naming_convention={
-    "fk": "fk_%(table_name)s_%(column_0_name)s_%(referred_table_name)s",
-})
-
-
-db = SQLAlchemy(metadata=metadata)
 
 
 class Member(db.Model, UserMixin):
-    ___tablname__ = "members"
+    # ___tablname__ = "members"
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(150), unique=True)
     password = db.Column(db.String(150), nullable=False)
@@ -28,7 +19,7 @@ class Member(db.Model, UserMixin):
 
 
 class Bike(db.Model):
-    __tablename__ = "bikes"
+    # __tablename__ = "bikes"
     id = db.Column(db.Integer, primary_key=True)
     manufacture = db.Column(db.String(45))
     type = db.Column(db.String(45))

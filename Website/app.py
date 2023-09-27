@@ -1,18 +1,18 @@
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-# from models import db, User, BaseMedication, ComparisonMedication
+from models import db, User, Medication, Query
 import requests
 
 
-# app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-# app.json.compact = False
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.json.compact = False
 
-# migrate = Migrate(app, db)
+migrate = Migrate(app, db)
 
-# db.init_app(app)
+db.init_app(app)
 
 
 # @app.get('https://api.fda.gov/drug/label.json/?api_key=1tBoJ0npQzVMLDVsMWgzHVqySLpyrzSyfGk8EhsO&search=drug_interactions:caffeine&limit=5')

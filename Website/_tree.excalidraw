@@ -1,0 +1,342 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "type": "rectangle",
+      "version": 212,
+      "versionNonce": 369831569,
+      "isDeleted": false,
+      "id": "utV1OdXG6qcwugYCcNHXN",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -326.9621563703543,
+      "y": 39.75792920859766,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 316.87969970703125,
+      "height": 117.0234375,
+      "seed": 962938785,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "ruoOHcidlXZyPI6oN7mMC"
+        },
+        {
+          "id": "vrY0IiMJ2Dk2Dj5pL_18Y",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1695744729171,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 357,
+      "versionNonce": 1923691633,
+      "isDeleted": false,
+      "id": "ruoOHcidlXZyPI6oN7mMC",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -314.21218688793243,
+      "y": 73.26964795859766,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 291.3797607421875,
+      "height": 50,
+      "seed": 1133534415,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1695744729171,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "UserAccounts\n-Login (name, email, password)",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "utV1OdXG6qcwugYCcNHXN",
+      "originalText": "UserAccounts\n-Login (name, email, password)",
+      "lineHeight": 1.25,
+      "baseline": 44
+    },
+    {
+      "type": "rectangle",
+      "version": 478,
+      "versionNonce": 1959365681,
+      "isDeleted": false,
+      "id": "BCNQUFQ0uff1-ctOVJ1_j",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -339.63245971508087,
+      "y": 237.40624463828516,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 341.6437683105469,
+      "height": 160,
+      "seed": 136827023,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "PY42yK1LJCICE2z1tKSf7"
+        },
+        {
+          "id": "vrY0IiMJ2Dk2Dj5pL_18Y",
+          "type": "arrow"
+        },
+        {
+          "id": "faBOGvwhgk1AV-5I16Idh",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1695744729171,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 431,
+      "versionNonce": 1359666705,
+      "isDeleted": false,
+      "id": "PY42yK1LJCICE2z1tKSf7",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -265.73049743480743,
+      "y": 242.40624463828516,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 193.83984375,
+      "height": 150,
+      "seed": 124020481,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1695744729171,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "Medications\n-Base Medications\n-Name\n-Generic Name\n-Known Interactions\n-Foreign Keys",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "BCNQUFQ0uff1-ctOVJ1_j",
+      "originalText": "Medications\n-Base Medications\n-Name\n-Generic Name\n-Known Interactions\n-Foreign Keys",
+      "lineHeight": 1.25,
+      "baseline": 144
+    },
+    {
+      "type": "rectangle",
+      "version": 377,
+      "versionNonce": 1063087025,
+      "isDeleted": false,
+      "id": "uNqjBvR8UGwXVvvxk6GqZ",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -313.98721130199493,
+      "y": 491.5672706392619,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 305,
+      "height": 185,
+      "seed": 1595776225,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "NagCHAv2N4h-PjjpCKGcG"
+        },
+        {
+          "id": "faBOGvwhgk1AV-5I16Idh",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1695744729171,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 602,
+      "versionNonce": 1828113809,
+      "isDeleted": false,
+      "id": "NagCHAv2N4h-PjjpCKGcG",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -304.95709045238556,
+      "y": 496.5672706392619,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 286.93975830078125,
+      "height": 175,
+      "seed": 1764766849,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1695744729171,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "Queries\n-New Medications/Substances\n-Name (str)\n-Generic (str)\n-Ongoing med comparing to\n-Known interactions of \ncomparison",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "uNqjBvR8UGwXVvvxk6GqZ",
+      "originalText": "Queries\n-New Medications/Substances\n-Name (str)\n-Generic (str)\n-Ongoing med comparing to\n-Known interactions of comparison",
+      "lineHeight": 1.25,
+      "baseline": 169
+    },
+    {
+      "type": "arrow",
+      "version": 702,
+      "versionNonce": 2015785119,
+      "isDeleted": false,
+      "id": "vrY0IiMJ2Dk2Dj5pL_18Y",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -178.83145746604356,
+      "y": 159.22352063926172,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 27.4143465237037,
+      "height": 72.0233154296875,
+      "seed": 1264116495,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [],
+      "updated": 1695744729436,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "utV1OdXG6qcwugYCcNHXN",
+        "focus": -0.07133931019987463,
+        "gap": 2.4421539306640625
+      },
+      "endBinding": {
+        "elementId": "BCNQUFQ0uff1-ctOVJ1_j",
+        "focus": -0.34893117529531315,
+        "gap": 6.1594085693359375
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -27.4143465237037,
+          72.0233154296875
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 586,
+      "versionNonce": 1594627295,
+      "isDeleted": false,
+      "id": "faBOGvwhgk1AV-5I16Idh",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": -178.00867657099218,
+      "y": 403.58913648398845,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 6.846646819702244,
+      "height": 82.12181091308594,
+      "seed": 1698854593,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [],
+      "updated": 1695744729436,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "BCNQUFQ0uff1-ctOVJ1_j",
+        "focus": 0.09230478914290864,
+        "gap": 6.1828918457032955
+      },
+      "endBinding": {
+        "elementId": "uNqjBvR8UGwXVvvxk6GqZ",
+        "focus": -0.00920450003219657,
+        "gap": 5.8563232421875
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          6.846646819702244,
+          82.12181091308594
+        ]
+      ]
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}

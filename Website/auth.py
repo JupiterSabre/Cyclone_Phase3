@@ -1,10 +1,14 @@
+# auth.py routes use authentication
 from flask import Blueprint, render_template, request, flash, redirect, url_for
-from flask_login import login_user, login_required, logout_user, current_user
+from flask_login import login_user, login_required, logout_user, current_user, UserMixin
 from .models import Member
+# from .queries import member_queries
 from . import db
+
 # hashing functions are functions that have no inverse, use for beefing up password security. sha256 is a hasing algorithm. There are others if you have another preference.
 from werkzeug.security import generate_password_hash, check_password_hash
 
+# __name__ is a parameter argument to the 
 auth = Blueprint("auth", __name__)
 
 
@@ -24,6 +28,9 @@ def login():
         else:
             flash("Email not in registry", category="error")
     return render_template("login.html", member=current_user)
+
+
+# @auth
 
 
 
@@ -65,7 +72,7 @@ def sign_up():
             new_member = Member(email=email, first_name=first_name, password=generate_password_hash(password1, method="sha256"))
             db.session.add(new_member)
             db.session.commit()
-            login_user(member, remember=True)
+            login_user(new_member, remember=True)
             flash("Account created!", category="success")
             return redirect(url_for("views.home"))
 

@@ -1,0 +1,52 @@
+Fields to return:
+
+openfda.brand_name
+openfda.generic_name
+openfda.manufacturer_name
+openfda.substance_name
+
+
+contraindications  (which is situations when not to use)
+drug_interactions
+precautions
+spl_product_data_elements  for names
+
+
+
+
+
+
+
+url_interactions = https://api.fda.gov/drug/label.json/?search=drug_interactions:caffeine&limit=5
+
+
+https://api.fda.gov/drug/label.json/?search=openfda.generic_name:ketamine
+
+
+
+
+
+# Structure of the returned object including the metadata headers:
+
+{
+    "meta": {
+    "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+    "terms": "https://open.fda.gov/terms/",
+    "license": "https://open.fda.gov/license/",
+    "last_updated": "2023-09-26",
+    "results": {
+    "skip": 0,
+    "limit": 5,
+    "total": 1833
+    }
+    },
+"results": [
+    {
+    "spl_product_data_elements": [
+    "Ofloxacin Ofloxacin OFLOXACIN OFLOXACIN Sodium Chloride Hydrochloric Acid Sodium Hydroxide Water Benzalkonium Chloride"
+],
+"spl_unclassified_section": [
+
+
+
+

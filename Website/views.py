@@ -2,6 +2,7 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 from flask_login import login_required, current_user
 from .models import Bike
+from .queries import member_queries
 from . import db
 
 
@@ -37,3 +38,19 @@ def home():
         
 
     return render_template("home.html", member=current_user)
+
+
+
+
+
+
+@views.route("/member_queries", methods= ["GET"])
+@login_required
+def member_queries():
+    if request.method == "GET":
+        query_list = member_queries()
+        if query_list:
+            flash("Here's what was found in the server.", category="success")
+            return render_template("member_queries.html", member=current_user, query_list=query_list)
+    flash("No results found")
+    return render_template("member_queries.html", member=current_user)
